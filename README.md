@@ -1,5 +1,15 @@
-Muntra can be deployed in a server environment using two different powershell scripts.
-Download Script: Check if a new version of Muntra is available. When a new version is available, delete the existing executable and replace it with the latest version. Else - do nothing.
+# deploy-script
+PowerShell scripts for deploying Muntra from a server environment to client computers used at clinics.
+
+## Download Script
+1. Checks if a new version of Muntra is available
+2. If a new version is available, deletes the existing executable and replace it with the latest version
+
 It is recommended to create a scheduled task that runs nightly.
-Install Script:: Logon script. Check if Muntra is installed - if not, install it from the path defined in script #1 and create a shortcut on the desktop. If Muntra is installed - do nothing.
-It is recommended to create a powershell logon script.
+
+## Install Script
+1. User logs in to computer
+2. Script checks if Muntra is installed
+3. If Muntra isn't installed, installs it from the path defined in script #1 and creates a shortcut on the desktop
+
+It is recommended to create a PowerShell logon script.
